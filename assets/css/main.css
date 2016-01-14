@@ -19,7 +19,16 @@ body, html {
   position: absolute;
   top: 30%;
   left: 42%;
+  -webkit-animation-name: fadeIn 2s;
+  animation-name: fadeIn;
+
 }
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 
 .button_1 {
   text-align: center;

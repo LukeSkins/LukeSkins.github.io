@@ -1,7 +1,7 @@
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("https://fonts.googleapis.com/css?family=Quicksand:300");
 @import url("http://fonts.googleapis.com/css?family=Pacifico");
-@import url("https://fonts.googleapis.com/css?family=Cutive+Mono");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
 
 body, html {
   margin: 0;
@@ -14,7 +14,7 @@ body, html {
 }
 
 .LukeSkinner h1 {
-  font-family: 'Cutive Mono', ;
+  font-family: 'Playfair Display', serif;
   font-size: 40px;
   font-weight: lighter;
   position: absolute;

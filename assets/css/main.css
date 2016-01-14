@@ -21,24 +21,44 @@ body, html {
 }
 
 .main-menu {
+  border-top: 4px solid #4e6587;
   list-style-type: none;
   margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #ffffff;
+  width: 175px;
+  background: white;
 }
 
 .menu a {
   display: block;
+  margin: 0;
   color: #000;
-  padding: 8px 0 8px 16px;
+  padding-top: 12px;
   text-decoration: none;
-  width: 100px;
+  width: 150px;
   font-family: 'Playfair Display', serif;
   text-align: center;
-
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-.menu a:hover{
-  background-color: #f6f6f6
+.li {
+  text-align: center;
+}
+
+.ink {
+	display: block;
+  position: absolute;
+	background: #c2dbdb;
+	border-radius: 100%;
+	transform: scale(0);
+}
+
+.ink.animate {
+  animation: ripple 0.65s linear;
+}
+
+  @keyframes ripple {
+    100% {opacity: 0; transform: scale(2.5);
+  }
 }

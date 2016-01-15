@@ -31,7 +31,7 @@ body, html {
   color: #000;
   padding-top: 12px;
   text-decoration: none;
-  width: 110px;b
+  width: 110px;
   font-family: 'Josefin Sans', sans-serif;
   text-align: left;
   overflow: hidden;
@@ -56,6 +56,7 @@ body, html {
 
 .li {
   text-align: center;
+  list-style-type: none;
 }
 
 .underline-from-left {
@@ -88,4 +89,32 @@ body, html {
 }
 .underline-from-left:hover:before, .underline-from-left:focus:before, .underline-from-left:active:before {
   right: 0;
+}
+
+.container2 {
+  display: block;
+  margin-right: auto;
+  color: #000;
+  padding-top: 12px;
+  text-decoration: none;
+  width: 110px;b
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  border-bottom: 5px #222222;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  top: 25%;
+  left: 5%;
+  position: absolute;
+}
+
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
 }

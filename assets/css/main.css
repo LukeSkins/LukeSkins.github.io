@@ -97,7 +97,7 @@ body, html {
   color: #000;
   padding-top: 12px;
   text-decoration: none;
-  width: 140px;
+  width: 160px;
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
   overflow: hidden;
@@ -119,6 +119,11 @@ ul.share-buttons li{
   display: inline;
 }
 
-i.share-buttons:hover {
+.container2 a:link {
+  text-decoration: none;
+  color: #343434;
+}
+
+.container2 a:hover {
   color: #7ec4cd;
 }

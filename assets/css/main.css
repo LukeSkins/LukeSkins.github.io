@@ -118,3 +118,7 @@ ul.share-buttons{
 ul.share-buttons li{
   display: inline;
 }
+
+i.share-buttons:hover {
+  color: #7ec4cd;
+}

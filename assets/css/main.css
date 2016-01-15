@@ -32,13 +32,14 @@ body, html {
   color: #000;
   padding-top: 12px;
   text-decoration: none;
-  width: 80px;
+  width: 110px;b
   font-family: 'Josefin Sans', sans-serif;
   text-align: left;
   overflow: hidden;
   cursor: pointer;
   border-bottom: 5px #222222;
   text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .menu a:link {
@@ -49,8 +50,9 @@ body, html {
     color: #7ec4cd;
 }
 
-.menu a:active {
+.li:active {
     color: #7f5df4;
+    border: #292929 1px;
 }
 
 .li {

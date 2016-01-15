@@ -24,6 +24,7 @@ body, html {
   margin-right: auto;
   width: 175px;
   text-decoration: none;
+  position: fixed;
 }
 
 .menu a {

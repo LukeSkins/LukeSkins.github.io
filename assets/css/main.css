@@ -7,6 +7,10 @@ body, html {
   font-size: 18px;
 }
 
+.site-logo {
+  top: 5%;
+}
+
 .LukeSkinner h1 {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 40px;
@@ -30,7 +34,7 @@ body, html {
 }
 
 
-.container1 a {
+.main-main-menu a {
   display: block;
   margin-right: auto;
   color: #000;
@@ -46,11 +50,11 @@ body, html {
   letter-spacing: 3px;
 }
 
-.container1 a:link {
+.main-main-menu a:link {
   text-decoration: none;
 }
 
-.container1 a:hover {
+.main-main-menu a:hover {
     color: #7ec4cd;
 }
 
@@ -96,7 +100,7 @@ body, html {
   right: 0;
 }
 
-.container2 {
+.socialkey {
   display: block;
   margin-right: auto;
   color: #000;
@@ -126,12 +130,12 @@ ul.share-buttons li{
   color: #393939
 }
 
-.container2 a:link {
+.socialkey a:link {
   text-decoration: none;
   color: #343434;
 }
 
-.container2 a:hover {
+.socialkey a:hover {
   color: #7ec4cd;
 }
 
@@ -169,7 +173,7 @@ ul.share-buttons li{
   -webkit-animation:color-cycle 1s steps(1, end) infinite;
   animation:color-cycle 0.5s steps(1, end) infinite;
   -webkit-animation-play-state:paused;
-  animation-play-state:paused
+  animation-play-state:paused;
 }
 
 a.site__title {
@@ -191,11 +195,6 @@ a.site__title {
 .site__title:hover .logo__line2 {
   -webkit-animation:wraparound 1.5s ease;
   animation:wraparound 1.5s ease;
-}
-
-.site__title:hover .logo__line--bottom {
-  -webkit-animation-delay:.1s;
-  animation-delay:.1s;
 }
 
 .logo__line {
@@ -223,8 +222,8 @@ a.site__title {
 }
 
 
-@-webkit-keyframes dash{from{stroke-dashoffset:60}}
-@keyframes dash{from{stroke-dashoffset:60}}
+@-webkit-keyframes dash{from{stroke-dashoffset:50}}
+@keyframes dash{from{stroke-dashoffset:50}}
 @-webkit-keyframes wraparound{to{stroke-dashoffset:80}}
 @keyframes wraparound{to{stroke-dashoffset:80}}
 
@@ -235,3 +234,16 @@ a.site__title {
 
 @-webkit-keyframes color-cycle{0%{background-color:#7ec4cd}}
 @keyframes color-cycle{0%{background-color:#7ec4cd}}
+
+
+
+/* =======ROW SPACING======= */
+
+.row1 {
+  top: 10%;
+}
+
+.row2 {
+  position: relative;
+  top: 50%;
+}

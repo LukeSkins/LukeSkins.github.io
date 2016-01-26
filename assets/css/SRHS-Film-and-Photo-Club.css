@@ -1,7 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300");
 
 .title1 h2 {
-  font-size: 20px;
-  font-family: 'Playfair Display', serif;
-  text-align: center;
+  font-size: 15px;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.title2 h1 {
+  font-size: 40px;
+  font-family: 'Josefin Sans', sans-serif;
+
 }

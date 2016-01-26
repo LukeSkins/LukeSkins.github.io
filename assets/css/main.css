@@ -122,17 +122,22 @@ ul.share-buttons{
   list-style: none;
   padding: 0;
   text-decoration: none;
+  color: #393939;
 }
 
 ul.share-buttons li{
   display: inline;
   text-decoration: none;
-  color: #393939
+  color: #393939;
 }
 
 .socialkey a:link {
   text-decoration: none;
-  color: #343434;
+  color: #393939;
+}
+
+.socialkey li {
+
 }
 
 .socialkey a:hover {
@@ -208,8 +213,8 @@ a.site__title {
 }
 
 .js-init .logo__line {
-  -webkit-animation:dash 1.5s 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.85);
-  animation:dash 1.5s 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.85);
+  -webkit-animation:dash 3s 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.85);
+  animation:dash 3s 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.85);
   -webkit-animation-fill-mode:backwards;
   animation-fill-mode:backwards;
 }

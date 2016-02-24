@@ -5,7 +5,15 @@ body, html {
   font-family: 'Playfair Display', serif;
   font-weight: 200;
   font-size: 18px;
+  color: #000000;
 }
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+
 
 .site-logo {
   top: 5%;
@@ -104,10 +112,10 @@ body, html {
   display: block;
   margin-right: auto;
   color: #000;
-  padding-top: 12px;
+  padding-top: 5px;
   padding-bottom: 12px;
   text-decoration: none;
-  width: 250px;
+  width: 210px;
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
   overflow: hidden;
@@ -122,23 +130,16 @@ ul.share-buttons{
   list-style: none;
   padding: 0;
   text-decoration: none;
-  color: #393939;
+  color: #000000;
 }
 
 ul.share-buttons li{
   display: inline;
   text-decoration: none;
-  color: #393939;
+  color: #000000;
 }
 
-.socialkey a:link {
-  text-decoration: none;
-  color: #393939;
-}
 
-.socialkey li {
-
-}
 
 .socialkey a:hover {
   color: #7ec4cd;

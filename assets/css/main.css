@@ -76,6 +76,10 @@ a {
   list-style-type: none;
 }
 
+.main-menu li {
+  display: inline-block;
+}
+
 .underline-from-left {
   display: inline-block;
   vertical-align: middle;

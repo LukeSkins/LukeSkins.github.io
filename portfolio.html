@@ -3,6 +3,7 @@
 <head>
   <title>Luke Skinner Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <meta name="theme-color"content="#393939">
 
 <!--JAVASCRIPT-->
 <script src="//code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
@@ -12,26 +13,180 @@
 <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 <!--ICONS-->
-<link rel="icon" size="any" mask href="/images/logo.svg">
+<link rel="icon" size="any" mask href="/static/images/logo.svg">
 
 <!--STYLING-->
   <style>
-  article.head {display:block; margin-top:4%; max-width:50%; margin-left:auto; margin-right:auto; position: relative; float:center; overflow:hidden; margin-bottom:6%;}  .title h1 {text-align:center; font-family: 'Playfair Display', serif; font-size:24px; color:#555555 }  .site_title {background-color:#585858;}
-  .ib {display:inline-block; text-align:center;} svg.site-logo {vertical-align: middle;} .b {display:block} .navbar-menu li {display:inline; list-style:none;  padding-left:20px; margin-top:-4px; } .navbar-menu a:link {text-decoration: none;} .navbar-menu a {font-family: 'Open Sans', sans-serif;
-  font-size:18px;color:#aaaaaa;} .navbar-menu a:hover{color:#878787;}
-  div#logo{float:left;} div#navmenu{float:right; height:40px; margin-top:-10px;}
+  body {
+    max-width: 50%;
+    margin-left:auto;
+    margin-right:auto;
 
+  }
 
-  </style>
+  article.head {
+    display:block;
+    margin-top:4%;
+    margin-left:auto;
+    margin-right:auto;
+    position: relative;
+    float:center;
+    overflow:hidden;
+    margin-bottom:10%;
+  }
 
+    div#logo {
+      float:left;
+    }
+
+    div#navmenu {
+      float:right;
+      height:40px;
+      margin-top:-10px;
+    }
+
+    .title h1 {
+      text-align:center;
+      font-family: 'Playfair Display', serif;
+      font-size:24px;
+      color:#3c454d;
+      margin-bottom: 10%;
+      font-weight: lighter;
+      letter-spacing: 0.05px;
+    }
+
+    .site__logo {
+        background-color:#3c454d;
+      }
+
+    .ib {
+      display:inline-block;
+      text-align:center;
+    }
+
+    svg.site-logo {
+      vertical-align: middle;
+      width: 28px;
+      height: 36px;
+    }
+
+    .b {
+      display:block
+    }
+
+    .navbar-menu {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+
+    .navbar-menu li {
+      display:inline;
+      list-style:none;
+      margin-left: 20px;
+    }
+
+    .navbar-menu a:link {
+      text-decoration: none;
+    }
+
+    .navbar-menu a {
+      font-family: 'Open Sans', sans-serif;
+      font-size:16px;
+      color:#aaaaaa;
+      letter-spacing: 0.05px;
+    }
+
+    .navbar-menu a:hover{
+      color:#444343;
+    }
+
+     hr {
+       color:inherit;
+       margin-top: 40px;
+       margin-bottom: 40px;
+     }
+
+     .page__content p {
+       color:#3c454d;
+       font-size: 20px;
+       font-weight: lighter;
+       margin-bottom:20px;
+       line-height: 1.4;
+       letter-spacing: 0.08px;
+       letter-spacing: 0.05px;
+     }
+
+     .page__content a {
+       color:#3c454d;
+       letter-spacing: 0.05px;
+     }
+
+     .footer__content p {
+       font-family: 'Open Sans', sans-serif;
+       font-size:18px;
+       color:#aaaaaa;
+       letter-spacing: 0.05px;
+     }
+
+     .footer__content {
+       margin-bottom: 40px;
+     }
+
+     img {
+       max-width:100%;
+       margin-bottom: 4.5%;
+     }
+
+     @media screen and (max-device-width: 768px) {
+       body {
+         max-width:85%;
+         margin-left:auto;
+         margin-right:auto;
+       }
+       .navbar-menu a {
+         font-size:14px;
+       }
+
+       .navbar-menu li {
+         margin-left: 10px;
+       }
+
+       .title h1 {
+         font-size:18px;
+         padding-top: 10px;
+         padding-bottom: 10px;
+         font-weight: lighter;
+         letter-spacing: 0.05px;
+       }
+
+       svg.site-logo {
+         width: 24px;
+         height: 32px;
+       }
+
+       .page__content p {
+         font-size: 14px;
+         font-weight: lighter;
+         margin-bottom:15px;
+         line-height: 1.4;
+         letter-spacing: 0.05px;
+       }
+
+       .footer__content p {
+         font-size:14px;
+         letter-spacing: 0.05px;
+       }
+     }
+</style>
 
 </head>
 
 <body>
   <article class="head" id="navbar" role="banner">
     <div id="logo">
-    <a class="site_title ib" href="index.html">
-      <svg class="site-logo b" width="28px" height="36px" viewBox="-3 -9 28 50" xmlns="http://www.w3.org/2000/svg">
+    <a class="site__logo ib" href="index.html">
+      <svg class="site-logo b" viewBox="-3 -9 28 50" xmlns="http://www.w3.org/2000/svg">
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g class="logo">
               <path d="M22.2,18.1621622 L4.07337372,18.1621622 C3.45122986,18.1621622 1.77845463,18.8538247 1.44136394,19.1194969 C1.10865509,19.3817156 0.760794745,19.6164194 0.552848028,19.9027707 C0.121921228,20.496175 0.0208128776,21.1218432 0.000684331915,21.4020369 C-0.0137552089,21.6030385 0.201293481,22.7414956 0.552848042,23.3839878 C0.92783951,24.0693126 1.27974789,24.3413225 1.27974789,24.3413225 C1.27974789,24.3413225 2.21095657,24.9505354 2.792962,25.0810811 C3.37496743,25.2116267 5.09249038,25.2986571 5.09249038,25.2986571 L19.526225,25.2986571 C19.526225,25.2986571 21.5620296,25.3856876 22.5811465,25.9949006 C23.6002635,26.6041135 23.9779596,28.4317525 23.9779596,28.4317525 C23.9779596,28.4317525 24.2107617,29.9112698 23.163152,30.781574 C22.9209039,30.9828222 22.3483444,32 20.2531248,32 L1.0469457,32" stroke="#FFF" stroke-width="2.5"></path>
@@ -54,6 +209,25 @@
   <div class="title">
     <h1 class="page__title">About</h1>
   </div>
+<div class="self__portrait">
+  <img src="static/images/me.jpg" alt="Sunset Silhouette">
+</div>
+  <div class="page__content">
+    <p>My name is Luke Skinner, and I'm a high school student at Scripps Ranch High School.  I have a knack for web design, and anything involving a computer.</p>
+
+    <p>I live in sunny San Diego, California, and enjoy my time to explore new skills in the computer design and programming world.  I hope to expand my skills, and use them to change the community around me.</p>
+
+    <p>Outside of design and development, I enjoy photography, traveling and finding new places for a good cup of coffee.</p>
+
+    <p>Check out my <a href="/contact.html">contact page</a> to get in touch.</p>
+  </div>
 </article>
+
+<hr></hr>
+
+<article class="footer__content">
+  <p>&copy; Luke Skinner, unless otherwise noted.</p>
+</article>
+
 </body>
 </html>

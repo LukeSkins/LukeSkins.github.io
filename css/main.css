@@ -1,188 +1,101 @@
 /*=========================*\
         PAGE SPACING
 \*=========================*/
+html {
+  width:100%;
+  height:100%;
+  color:#ffffff;
+}
 body {
   width: 100%;
+  height:100%;
   margin: 0;
 }
 
-.site__content {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    display: block;
-}
-
 /*=========================*\
-           SIDEBAR
+           HEADER
 \*=========================*/
-#sidebar__menu {
-  width: 30%;
-  height: 100%;
-  position: fixed;
-  display: block;
-  left:0;
-  top: 0;
-  bottom: 0;
+
+#page__header {
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+  height: 10%;
+}
+
+#page__header a {
+  text-decoration: none;
+  color: #c1c1c1;
+}
+
+.header__title {
+  text-align: left;
+  width: 90%;
+  display: inline-block;
+}
+
+.header__title p {
   font-family: 'Montserrat', sans-serif;
-  margin-left: 5%;
+  color: #333333;
+  text-transform:uppercase;
+  font-size: 24px;
+  letter-spacing: 5px;
+  border-radius: 30px;
+  background-color: blue;
 }
 
-.svg__container {
-  margin-top: 8%;
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  padding-bottom: 20%; 
-  overflow: hidden;
-  margin-left: 25%;
-  text-align: left;
-}
-
-
-svg.site__logo {
-  display: inline-block;
+.page__menu {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding: 0;
   position: absolute;
-  width: 40%;
+  display: inline-block;
 }
 
-.navigation {
-  float: center;
-  position: relative;
-  margin-left: 25%;
-  padding-left: 0%;
-}
-
-.navigation li {
-  list-style:none;
-  padding-bottom: 15px;
-  text-align: left;
-  font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
+.page__menu li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  display: inline;
+  margin: 1.5%;
   text-transform: uppercase;
 }
 
-.navigation a:link {
-  text-decoration: none;
+.active__link {
+  color:#333333;
 }
 
-.navigation a {
-  letter-spacing: 1px;
-  color: #aaaaaa;
+.menu__left {
+  float: left;
 }
 
-.navigation a:hover {
-  color: #636363;
+.menu__right {
+  float: right;
 }
+
+
 
 /*=========================*\
-        PAGE CONTENT
+           CONTENT
 \*=========================*/
 
 #page__content {
-  width: 70%;
-  min-height: 100%;
-  position: absolute;
-  background-color: #ffffff;
-  display: block;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  margin-right: 5%;
-}
-
-.page__title {
-  color: #333333;
-  font-size: 20px;
-  text-align: center;
-  margin-top: 8%;
-  font-family: 'Montserrat', sans-serif;
-}
-
-img {
-  max-width: 65%;
-  display: block;
+  width: 50%;
+  height: 90%;
+  margin-top: 10%;
+  background-color: blue;
   margin-left: auto;
   margin-right: auto;
 }
 
-.section__divider p {
-  color: #333333;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  text-align: center;
-}
+/*=========================*\
+           FOOTER
+\*=========================*/
 
-.content__paragraphs {
-  margin-top: 30px;
-  max-width: 65%;
+#page__footer {
+  width: 100%;
+  height: 10%;
+  background-color: red;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 4%;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-}
-
-.content__paragraphs p {
-  font-weight: 400;
-  color: #333333;
-  line-height: 30px;
-  letter-spacing: 0.2px;
-}
-
-.content__paragraphs a {
-  font-weight: 400;
-  color: #333333;
-  line-height: 30px;
-  letter-spacing: 0.2px;
-}
-
-.content__paragraphs a:hover {
-  font-weight: 400;
-  color: #8578e8;
-  line-height: 30px;
-  letter-spacing: 0.2px;
-}
-
-/*=========================*\
-         SITE FOOTER
-\*=========================*/
-#site__footer {
-    height: 60px;
-    width: 100%;
-    display: inline;
-    bottom: 0;
-    clear: both;
-    
-}
-
-.footer__left {
-    text-align: center;
-    margin-left: 10%;
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
-    color: #aaaaaa;
-}
-
-.footer__right {
-    text-align: center;
-    margin-right: 10%;
-    
-}
-
-
-/*=========================*\
-          SCROLLBAR
-\*=========================*/
-
-::-webkit-scrollbar {
-	width: 12px;
-}
-
-::-webkit-scrollbar-track {
-	background: none;
-}
-
-::-webkit-scrollbar-thumb {
-	background-color: #cdcdcd;
 }

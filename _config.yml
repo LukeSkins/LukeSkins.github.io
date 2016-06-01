@@ -1,0 +1,29 @@
+#==============================
+# General site config
+#==============================
+
+name: "Luke Skinner"
+url: http://lukeskinner.me
+
+markdown: kramdown
+
+
+#==============================
+# File inclusions/exclusions
+#==============================
+
+include: [".htaccess"]
+
+
+#==============================
+# Plugins
+#==============================
+
+gems: [jekyll-assets]
+
+assets:
+  digest: true
+  cache: false
+  sources:
+    - "_assets/css"
+    - "_assets/js"

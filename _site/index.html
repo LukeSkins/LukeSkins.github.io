@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About | Luke Skinner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+
+  <!--META TAGS-->
+  <meta charset='UTF-8'>
+  <meta name='keywords' content='portfolio, San Diego, Graphic Design, Web Development, Photography'>
+  <meta name='subject' content='Luke Skinner | Portfolio Website'>
+  <meta name='copyright' content='Luke Skinner'>
+  <meta name='author' content='Luke Skinner, luke@lukeskinner.me'>
+  <meta name='url' content='http://lukeskinner.me'>
+
+  <!--JAVASCRIPT-->
+  <script src="//code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+
+  <!--FONTS-->
+<link href='https://fonts.googleapis.com/css?family=Unna|Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+<script src="https://use.fontawesome.com/abf3b245f8.js"></script>
+
+  <!--STYLE-->
+  <style>
+    /*=========================*\
+        PAGE SPACING
+\*=========================*/
+
+html {
+  width:100%;
+  height:100%;
+  color:#ffffff;
+}
+body {
+  width: 100%;
+  height:100%;
+  margin: 0;
+  background-color: #eeeeee;
+}
+
+
+/*=========================*\
+           HEADER
+\*=========================*/
+
+.page__header {
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+  height: 10%;
+  margin-bottom: 4%;
+}
+
+.header__title {
+  text-align: center;
+  width: 10%;
+  text-transform:uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+}
+
+.header__title h1 {
+  font-family: 'Unna', serif;
+  color: #333;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.header__title a {
+  text-decoration: none;
+  width: 10%;
+}
+
+.page__menu {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding: 0;
+  text-align: center;
+}
+
+.page__menu li {
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: 2px;
+  font-size: 12px;
+  display: inline;
+  margin: 1.5%;
+}
+
+.page__menu a {
+  text-decoration: none;
+  color: #333;
+}
+
+.page__menu a:hover {
+  color: #878787;
+}
+
+.active__link a {
+  text-decoration: underline;
+}
+
+.burger-container {
+  display: none;
+}
+
+/*=========================*\
+           CONTENT
+\*=========================*/
+
+#page__content {
+  width: 60%;
+  height: 100%;
+  margin-top: 4%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#page__content p {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333;
+  letter-spacing: 0.1px;
+  line-height: 25px;
+  margin-bottom: 25px;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+#page__content a {
+  color: #333;
+}
+
+#page__content a:hover {
+  color: #878787;
+}
+
+#page__content img {
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.page__title {
+  text-align: center;
+}
+
+.page__title h2 {
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.content__wrapper {
+  background-color: #fff;
+  width: 60%;
+  padding: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+}
+
+/*=========================*\
+           FOOTER
+\*=========================*/
+#page__footer {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.copyright__notice, .socialbuttons, .mobile__social {
+  display: inline-block;
+}
+
+.copyright__notice {
+  overflow: hidden;
+
+}
+
+.copyright__notice p {
+  color: #909090;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.socialbuttons {
+  float: right;
+  width: 30%;
+  text-align: right;
+}
+
+.socialbuttons a {
+  color: #909090;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.socialbuttons a:hover {
+  color: #585858;
+}
+
+.socialbuttons li {
+  display: inline;
+  padding-left: 16px;
+  padding-right: 0px;
+}
+
+.mobile__social{
+  display: none;
+}
+
+
+
+
+
+/*=========================*\
+           MISC.
+\*=========================*/
+
+::-moz-selection {
+    background: #acf2f9;
+}
+
+::selection {
+  background: #acf2f9;
+}
+
+
+@media only screen and (max-device-width: 767px) {
+  .page__header {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    height: 10%;
+    margin-bottom: 4%;
+  }
+
+  .header__title {
+    text-align: center;
+    vertical-align: middle;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-transform:uppercase;
+    text-decoration: none;
+    margin-left: 0;
+    margin-right: 0;
+    display: inline-block;
+  }
+
+
+  .header__title h1 {
+    font-family: 'Unna', serif;
+    color: #333;
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .header__title a {
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+  }
+
+
+  .window {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .window .page__header {
+    top: 0;
+    height: 50px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease-out, background 1s ease-out;
+    transition: all 0.5s ease-out, background 1s ease-out;
+    -webkit-transition-delay: 0.2s;
+            transition-delay: 0.2s;
+    z-index: 1;
+  }
+  .window .page__header .burger-container {
+    position: relative;
+    display: inline-block;
+    float: right;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .window .page__header .burger-container #burger {
+    width: 18px;
+    height: 8px;
+    position: relative;
+    display: block;
+    margin: -4px auto 0;
+    top: 50%;
+  }
+  .window .page__header .burger-container #burger .bar {
+    width: 100%;
+    height: 1px;
+    display: block;
+    position: relative;
+    background: #333;
+    -webkit-transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+  }
+  .window .page__header .burger-container #burger .bar.topBar {
+    -webkit-transform: translateY(0px) rotate(0deg);
+            transform: translateY(0px) rotate(0deg);
+  }
+  .window .page__header .burger-container #burger .bar.btmBar {
+    -webkit-transform: translateY(6px) rotate(0deg);
+            transform: translateY(6px) rotate(0deg);
+  }
+
+  .window .page__header ul.page__menu {
+    position: relative;
+    display: block;
+    text-align: center;
+    list-style: none;
+    margin-top: 15%;
+  }
+
+  .window .page__header ul.page__menu li.menu-item a {
+    display: block;
+    position: relative;
+    color: #000;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 2.35;
+    font-weight: 200;
+    width: 100%;
+  }
+  .window .page__header.menu-opened {
+    height: 100%;
+    background-color: #eee;
+    -webkit-transition: all 0.3s ease-in, background 0.5s ease-in;
+    transition: all 0.3s ease-in, background 0.5s ease-in;
+    -webkit-transition-delay: 0.25s;
+            transition-delay: 0.25s;
+  }
+  .window .page__header.menu-opened .burger-container {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .window .page__header.menu-opened .burger-container #burger .bar {
+    -webkit-transition: all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    transition: all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    -webkit-transition-delay: 0.2s;
+            transition-delay: 0.2s;
+  }
+  .window .page__header.menu-opened .burger-container #burger .bar.topBar {
+    -webkit-transform: translateY(4px) rotate(45deg);
+            transform: translateY(4px) rotate(45deg);
+  }
+  .window .page__header.menu-opened .burger-container #burger .bar.btmBar {
+    -webkit-transform: translateY(3px) rotate(-45deg);
+            transform: translateY(3px) rotate(-45deg);
+  }
+  .window .page__header.menu-opened ul.menu li.menu-item {
+    -webkit-transform: scale(1) translateY(0px);
+            transform: scale(1) translateY(0px);
+    opacity: 1;
+  }
+
+
+  .content__wrapper {
+
+    width: 75%;
+  }
+
+  #page__content {
+    width: 85%;
+  }
+
+  #page__footer {
+    width: 85%;
+  }
+
+  .socialbuttons {
+      display: none;
+  }
+
+
+  .copyright__notice {
+    width: 85%;
+  }
+
+  .mobile__social{
+    display: block;
+    float: right;
+    width: 15%;
+    overflow: hidden;
+    margin-top: 20px;
+    text-align: right;
+    color: #909090;
+  }
+
+}
+
+  </style>
+
+  <script>
+    (function(){
+    var burger = document.querySelector('.burger-container'),
+        page__header = document.querySelector('.page__header');
+
+    burger.onclick = function() {
+        page__header.classList.toggle('menu-opened');
+    }
+}());
+
+  </script>
+</head>
+
+<body>
+<div class="window">
+  <div class="page__header">
+
+    <div class="burger-container">
+      <div id="burger">
+        <div class="bar topBar"></div>
+        <div class="bar btmBar"></div>
+      </div>
+    </div>
+
+    <div class="header__title">
+      <a href="/"><h1>L.</h1></a>
+    </div>
+      <ul class="page__menu">
+
+        <li class="active__link menu-item"><a href="/">About</a></li>
+        <li class="menu-item"><a href="/work">Work</a></li>
+        <li class="menu-item"><a href="/blog">Blog</a></li>
+        <li class="menu-item"><a href="/contact">Contact</a></li>
+        </li>
+      </ul>
+</div>
+<div class="content__wrapper">
+  <div id="page__content">
+    <div class="page__title">
+      <h2>About</h2>
+
+    </div>
+
+
+
+    <img alt="Luke Skinner -- Lake Tahoe Sunset" src="/uploads/me/1.jpg"/>
+    <p>My name is Luke Skinner, and I’m a high school student at Scripps Ranch High School. I have a knack for web design, graphic design, and anything involving a computer.</p>
+
+<p>I live in sunny San Diego, California, and enjoy my time to explore new skills in the computer design and programming world. I hope to expand my skills, and use them to change the community around me.</p>
+
+<p>Outside of design and development, I enjoy photography, traveling and finding new places for a good cup of coffee.</p>
+
+<p>Check out my <a href="contact">contact</a> page to get in touch.</p>
+
+  </div>
+</div>
+
+  <div id="page__footer">
+    <div class="copyright__notice">
+      <p>&copy; 2016 Luke Skinner, unless otherwise noted.</p>
+    </div>
+
+    <div class="mobile__social">
+        <i class="fa fa-link" aria-hidden="true"></i>
+    </div>
+
+    <ul class="socialbuttons">
+      <li><a href="https://www.instagram.com/lukeskins/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
+      </a></li>
+      <li><a href="https://www.twitter.com/lukeskinss/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>
+      </a></li>
+      <li><a href="https://www.facebook.com/luke.skinner.165" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>
+      </a></li>
+      <li><a href="https://github.com/Lukeskins" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>
+      </a></li>
+
+    </ul>
+
+  </div>
+
+</div>
+
+<script>
+  (function(){
+    var burger = document.querySelector('.burger-container'),
+        page__header = document.querySelector('.page__header');
+
+    burger.onclick = function() {
+        page__header.classList.toggle('menu-opened');
+    }
+}());
+
+</script>
+
+
+</body>
+
+</html>
+ </div>
+
+</div>
+
+<script>
+  (function(){
+    var burger = document.querySelector('.burger-container'),
+        page__header = document.querySelector('.page__header');
+
+    burger.onclick = function() {
+        page__header.classList.toggle('menu-opened');
+    }
+}());
+
+</script>
+
+
+</body>
+
+</html>

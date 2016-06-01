@@ -1,0 +1,62 @@
+/*=========================*\
+           HEADER
+\*=========================*/
+
+
+.page__header {
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+  height: 10%;
+}
+
+.page__header a {
+  text-decoration: none;
+  color: #c1c1c1;
+}
+
+.header__title {
+  text-align: center;
+  width: 90%;
+  display: inline-block;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__title p {
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+  text-transform:uppercase;
+  font-size: 24px;
+  letter-spacing: 5px;
+}
+
+.page__menu {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding: 0;
+  position: absolute;
+  display: inline-block;
+}
+
+.page__menu li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  display: inline;
+  margin: 1.5%;
+  text-transform: uppercase;
+}
+
+.active__link {
+  color:#333333;
+}
+
+.menu__left {
+  float: left;
+}
+
+.menu__right {
+  float: right;
+}

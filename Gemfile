@@ -1,9 +1,7 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
-gem "jekyll-assets"
 
-gem "coffee-script" 
-gem "uglifier"
-gem "sass"
+# jekyll plugin
 
-gem 'github-pages'
+gem "jekyll"
+

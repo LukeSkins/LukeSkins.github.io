@@ -9,4 +9,4 @@ I live in sunny San Diego, California, and enjoy my time to explore new skills i
 
 Outside of design and development, I enjoy photography, traveling and finding new places for a good cup of coffee.
 
-Check out my [contact](contact) page to get in touch.
+Check out my [contact](/contact) page to get in touch.

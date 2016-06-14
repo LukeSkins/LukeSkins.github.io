@@ -1,6 +1,9 @@
 ---
 layout: homepage
 title: About
+permalink: /index
+in-nav: true
+weight: 1
 ---
 
 My name is Luke Skinner, and I'm a high school student at Scripps Ranch High School. I have a knack for web design, graphic design, and anything involving a computer.

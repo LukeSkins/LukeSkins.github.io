@@ -1,6 +1,6 @@
 ## lukeskinner.me / lukeskins.github.io
 
----
+
 
 This website is written in HTML, CSS, and a little bit of JavaScript.  Using Jekyll, it compiles components into a static page based website.  
 

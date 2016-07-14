@@ -61,6 +61,46 @@ hr {
   margin-right: auto;
 }
 
+.link__underline {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 3px;
+}
+
+.link__underline:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 25%;
+  height: 10px;
+  width: 0;
+  transition: width 0s ease, background .2s ease;
+}
+
+.link__underline:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 25%;
+    height: 10px;
+    width: 0;
+    background: rgba(196, 255, 220, 0.60);
+    transition: width .2s ease;
+}
+
+.link__underline:hover:before {
+    width: 100%;
+    background: rgba(196, 255, 220, 0.60);
+    transition: width .2s ease;
+}
+.link__underline:hover:after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
+}
+
 
 /*=========================*\
            HEADER

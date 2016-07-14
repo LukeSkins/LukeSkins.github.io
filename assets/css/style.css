@@ -156,10 +156,6 @@ hr {
   color: #333;
 }
 
-.page__menu a:hover {
-  color: #878787;
-}
-
 .burger-container {
   display: none;
 }

@@ -117,10 +117,10 @@ hr {
 .pace .pace-progress {
   position: fixed;
   z-index: 2000;
-  top: 0;
-  right: 0;
-  height: 5rem;
-  width: 5rem;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
 
   -webkit-transform: translate3d(0, 0, 0) !important;
   -ms-transform: translate3d(0, 0, 0) !important;
@@ -131,15 +131,14 @@ hr {
   display: block;
   position: absolute;
   background-color: white;
-  top: 0;
-  right: .5rem;
+  top: 50%;
   content: attr(data-progress-text);
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 100;
   font-size: 5rem;
   line-height: 1;
-  text-align: right;
-  color: rgba(196, 255, 220, 0.60);
+  text-align: center;
+  color: #000;
 }
 
 

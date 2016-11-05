@@ -130,6 +130,7 @@ hr {
 .pace .pace-progress:after {
   display: block;
   position: absolute;
+  background-color: white;
   top: 0;
   right: .5rem;
   content: attr(data-progress-text);
@@ -164,7 +165,7 @@ hr {
 }
 
 .header__title h1 {
-  font-family: 'Unna', serif;
+  font-family: 'Playfair Display', serif;
   color: #333;
   font-size: 30px;
   letter-spacing: 2px;

@@ -6,7 +6,3 @@
         page__header.classList.toggle('menu-opened');
     }
 }());
-
-window.onload() = function() {
-  document.querySelector('.hidden').style.display = "none";
-}

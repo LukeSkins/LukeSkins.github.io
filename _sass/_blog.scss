@@ -1,0 +1,26 @@
+/*
+======
+ Blog
+======
+*/
+.blog-list {
+  list-style: none;
+  justify-content: space-between;
+
+  li {
+    h4 {
+      font-family: $body-font-family;
+      display: inline-block;
+      justify-content: space-between;
+      font-weight: normal;
+    }
+
+    p {
+      font-family: $body-font-family;
+      display: inline-block;
+      right: 0;
+      font-style: italic;
+      color: lighten($text-color, 50%);
+    }
+  }
+}

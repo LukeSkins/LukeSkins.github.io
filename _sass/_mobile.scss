@@ -1,0 +1,71 @@
+/*
+========
+ Mobile
+========
+*/
+@media (max-width:768px) {
+  body {
+    font-size: 1.0em;
+  }
+
+  .noscroll {
+    overflow: hidden;
+  }
+
+  .site-header {
+    .menu {
+      display: block;
+      margin-top: 40%;
+      position: absolute;
+      @include prefix(background, linear-gradient(90deg,#00FFB8,#32E1FF), webkit ms moz o);
+      @include prefix(animation, hue 2s infinite linear, webkit ms moz o);
+      height: 450%;
+      width: 100%;
+      text-align: center;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .menubtn {
+      display: inline;
+    }
+
+    .closebtn {
+      display: block;
+    }
+
+    ul {
+      list-style: none;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      text-align: center;
+      margin-top: 2%;
+
+      li {
+        display: block;
+
+        a {
+          &:hover {
+            color: lighten($link-color, 50%);
+          }
+        }
+      }
+    }
+  }
+
+  .page-content {
+    width: 80%;
+    padding: 10%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 12%;
+
+    img {
+      width: 100%;
+      padding-bottom: $spacing-unit;
+    }
+  }
+}

@@ -1,20 +1,24 @@
-#==============================
-# General site config
-#==============================
+# Site settings
+title: Luke Skinner Portfolio
+email: luke@lukeskinner.me
+description: > #
+  This site serves the purpose of sharing the work and interests of the site's owner, Luke Skinner.
+url: "https://lukeskinner.me"
 
-name: "Luke Skinner"
-url: http://lukeskinner.me
+twitter_username: lukesknr
+github_username:  lukeskins
+instagram_username: lukeskins
+facebook_username: lukeskins
 
+# Build settings
 markdown: kramdown
+layout: compressed
+sass:
+    style: compressed
 
-
-#==============================
-# File inclusions/exclusions
-#==============================
-
-include: [".htaccess"]
-
-
-#==============================
-# Plugins
-#==============================
+#Seasonal Colors
+color:
+  - "#b0f1ff" # Summer
+  - "#ffbe94" # Fall
+  - "#c2e9ff" # Winter
+  - "#c7ffc9" # Spring

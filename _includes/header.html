@@ -1,26 +1,19 @@
-<body>
-  <div class="window">
-    <div class="page__header">
+<header class="site-header">
 
-      <div class="burger-container">
-        <div id="burger">
-          <div class="bar topBar"></div>
-          <div class="bar btmBar"></div>
-        </div>
-      </div>
+  <h1 class="title">{{ page.title }}</h1>
 
-      <div class="header__title">
-        <a href="/"><h1>L.</h1></a>
-      </div>
-        <ul class="page__menu">
+  <a href="javascript:;" class="menubtn">Menu</a>
 
-    {% assign pages = site.pages | sort:"weight"  %}
-    {% for p in pages %}
+  <div class="menu hide">
 
-      {% if p.in-nav == true %}
-      <li><a class="link__underline" {% if p.url == page.url%}class="active"{% endif %} href="{{ p.url }}">{{ p.title }}</a></li>
-        {% endif %}
-    {% endfor %}
 
-        </ul>
-    </div>
+    <ul class="menulist">
+      {% assign pages = site.pages | sort:"weight" %} {% for p in pages %} {% if p.in-nav == true %}
+      <li><a class="" href="{{ p.url }}">{{ p.title }}</a></li>
+      {% endif %} {% endfor %}
+    </ul>
+
+    <a href="javascript:;" class="closebtn">Close</a>
+  </div>
+
+</header>

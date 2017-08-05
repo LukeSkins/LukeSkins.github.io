@@ -1,0 +1,98 @@
+---
+# MAIN.SCSS
+---
+@charset "utf-8";
+
+/* Vendor Prefix Mixin */
+
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+
+  #{$property}: $value;
+}
+
+
+
+/* Fonts */
+$title-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body-font-family: Georgia, Times, "Times New Roman", serif;
+
+$title-font-weight: bold;
+$link-font-weight: normal;
+
+$body-font-size: 1.125em;
+$body-font-weight: normal;
+$body-color: #fff;
+
+$spacing-unit:     15px;
+
+$text-color:       #000;
+$link-color: #000;
+
+
+/* Rainbow Color Property */
+.highlight {
+    color:  #fff;
+    background-image: -webkit-linear-gradient(0deg,#00FFB8,#32E1FF);
+    @include prefix(background-clip, text, webkit ms moz o);
+    @include prefix(text-fill-color, transparent, webkit ms moz o);
+    @include prefix(animation, hue 2s infinite linear, webkit ms moz o);
+    @include prefix(text-decoration-fill-color, transparent, webkit ms moz o);
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+
+
+$base-line-height: 10px;
+$background-color: #ffffff;
+
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+$highlight-color:  #b0f1ff;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "general",
+        "header",
+        "content",
+        "footer",
+        "blog",
+        "mobile",
+        "skeleton"
+
+;

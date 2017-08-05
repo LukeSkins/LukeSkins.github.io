@@ -1,0 +1,70 @@
+/*
+=========
+ Content
+=========
+*/
+.page-content {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 10%;
+  position: relative;
+  z-index: -10;
+  font-size: $body-font-size;
+  font-family: $body-font-family;
+  line-height: 2em;
+
+  img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h3 {
+    font-family: $title-font-family;
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 2em;
+  }
+
+  a {
+    position: relative;
+    padding-bottom: 0.1em;
+    font-family: $title-font-family;
+    color: $link-color;
+    font-weight: $link-font-weight;
+    font-size: $body-font-size * 0.8;
+    text-decoration: none;
+
+
+    &:hover {
+      color: lighten($link-color, 50%);
+
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0.15em;
+      left: 0;
+      height: 0.075em;
+      width: 100%;
+      background: #000;
+    }
+
+    &:hover::after {
+      content: "";
+      position: absolute;
+      bottom: 0.15em;
+      left: 0;
+      height: 0.075em;
+      width: 100%;
+      background: #000;
+      @include prefix(background, linear-gradient(0deg,#00FFB8,#32E1FF), webkit ms moz o);
+      @include prefix(animation, hue 2s infinite linear, webkit ms moz o);
+    }
+  }
+}

@@ -3,7 +3,7 @@ layout: page
 title: Work
 permalink: /work
 in-nav: true
-weight: 2
+weight: 1
 ---
 
 ### Project Example

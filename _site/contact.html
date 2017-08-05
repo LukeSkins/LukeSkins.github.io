@@ -1,6 +1,26 @@
 <!DOCTYPE html>
 <html>
-<script src="assets/js/main.js"></script>
+<script type="text/javascript">
+(function() {
+
+  var menubutton = document.querySelector('.menubtn'),
+    menu = document.querySelector('.menu'),
+    closebutton = document.querySelector('.closebtn'),
+    content = document.querySelector('body');
+
+  menubutton.onclick = function() {
+    menu.classList.toggle('hide');
+    content.classList.toggle('noscroll');
+  }
+
+  closebutton.onclick = function() {
+    menu.classList.toggle('hide');
+    content.classList.toggle('noscroll');
+  }
+
+
+}());
+</script>
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +35,6 @@
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="https://lukeskinner.me/contact">
   <link rel="alternate" type="application/rss+xml" title="Luke Skinner Portfolio" href="https://lukeskinner.me/feed.xml">
-
 
 </head>
 
